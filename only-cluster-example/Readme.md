@@ -1,0 +1,1 @@
+the cluster approach can be deployed as a simple node-js app
