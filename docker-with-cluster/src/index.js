@@ -7,7 +7,7 @@ if (cluster.isMaster) {
   console.log(`Master process on port ${process.env.PORT}`);
 } else {
   app.get("/", async (req, res) => {
-    console.log("received request to /");
+    console.log(`${ process.pid } received a request to /`);
     res.send("Hello World");
   });
   app.listen(3000);
